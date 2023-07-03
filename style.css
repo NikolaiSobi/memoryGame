@@ -1,0 +1,80 @@
+body {
+  background-color: teal;
+}
+
+#game div {
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.front {
+  background-color: black;
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
+.back {
+  animation: flipCard 1s;
+}
+
+@keyframes flipCard {
+  0% {
+    transform: rotateY(180deg);
+    background-color: black;
+    background-image: none;
+  }
+
+  100% {
+    transform: rotateY(0deg)
+  }
+}
+
+#game div:hover {
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}
+
+#game {
+  width: 700px;
+  margin: auto;
+}
+
+.pantheon {
+  background-image: url('https://images.contentstack.io/v3/assets/blt93c07aad6c2c008a/bltf507f7b496d6cdb0/63ea711590d6c845bf5069fc/Pantheon_0.jpg');
+}
+
+.qiyana {
+  background-image: url('https://64.media.tumblr.com/9d8c211be3317b63e64863be6890429f/8d49181d0414d3dd-db/s400x600/d9246c9bd371272e63c94068b6f5310fd816522a.png');
+}
+
+.draven {
+  background-image: url('https://prod.api.assets.riotgames.com/public/v1/asset/lol/13.12.1/CHAMPION/119/ICON');
+}
+
+.akshan {
+  background-image: url('https://images.contentstack.io/v3/assets/blt93c07aad6c2c008a/blt14f09133cde7e669/63ea6e7045a8fc180467ba96/Akshan_0.jpg?auto=webp&width=200&height=200');
+}
+
+.morgana {
+  background-image: url('https://prod.api.assets.riotgames.com/public/v1/asset/lol/13.12.1/CHAMPION/25/ICON');
+}
+
+.xayah {
+  background-image: url('https://img.rankedboost.com/wp-content/plugins/league-of-legends-wild-rift/assets/champion-icons/Xayah-Icon.png');
+}
+
+.xin {
+  background-image: url('https://images.contentstack.io/v3/assets/blt93c07aad6c2c008a/blt6874b47135fad4a1/63ea6f3e2dcd8c102aea9259/XinZhao_0.jpg?auto=webp&width=200&height=200');
+}
+
+.yone {
+  background-image: url('https://images.contentstack.io/v3/assets/blt93c07aad6c2c008a/bltdbde88d2ec21b28f/63ea6f51135e81381000fc72/Yone_0.jpg?auto=webp&width=200&height=200');
+}
+
